@@ -7,5 +7,6 @@ const btnChangeColor = document.querySelector('.change-color');
 console.log(btnChangeColor);
 const color = document.querySelector('.color');
 btnChangeColor.addEventListener('click', () => {
-    color.style.backgroundColor = getRandomHexColor();
+    color.textContent = getRandomHexColor();
+    document.body.style.backgroundColor = color.textContent;
 });
