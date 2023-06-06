@@ -10,6 +10,10 @@ function handleSubmit(event) {
     if (email.value === '' && password.value === '') {
         return alert('Потрібно заповнити поле');
     }
-    console.log(`Email:${email.value}, Password: ${password.value}`);
+    const objData = {
+        email: email.value,
+        password: password.value,
+    };
+    console.log(objData);
     event.currentTarget.reset();
 }
